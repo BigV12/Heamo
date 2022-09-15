@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Genotype compactability check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="textone">
+        <h2>Genotype Calculator</h2>
+        <h2>What is Heamoglobin Genotype Compactibility</h2>
+
+        <p>
+          Genotype can be simply defined as the genetic constitution of an
+          individual organism
+        </p>
+
+        <p>
+          The genotypes in humans are AA, AS, AC, SS. They refer to the
+          hemoglobin gene constituents on the red blood cells. AC is rare
+          whereas AS and AC are abnormal.
+        </p>
+      </section>
+
+      <section class="texttwo">
+        <p>
+          You can use this app to check if your Hemoglobin genotype is
+          compactible with your partner's genotype.
+        </p>
+
+        <p>
+          Your genotype can either be AA,SS or AS. <br />
+          Enter your genotype in the box below and that of your partner.<br /><br />
+          If you don't know your Genotype, Go to the nearest Labolatory and take
+          a test
+        </p>
+      </section>
+
+      <section>
+        <div class="card">
+          <input
+            class="partner-a"
+            maxlength="2"
+            placeholder="Enter your Genotype"
+            onkeyup="this.value = this.value.toUpperCase()"
+          />
+          <br /><br />
+
+          <input
+            class="partner-b"
+            maxlength="2"
+            placeholder="Enter your Partners Genotype"
+            onkeyup="this.value = this.value.toUpperCase()"
+          /><br /><br />
+
+          <button class="btn">Check compactibility</button>
+        </div>
+
+        <p>
+          For more info about heamoglboin Genotype
+          <a
+            href="https://www.aun.edu.ng/index.php/campus-life/health-center/health-tips/genotype-compatibility"
+          >
+            here
+          </a>
+        </p>
+      </section>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

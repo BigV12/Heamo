@@ -1,0 +1,58 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  color: white;
+}
+
+.container {
+  background-color: rgb(57, 85, 90);
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 6px;
+}
+
+.card {
+  text-align: center;
+  background-color: rgb(55, 79, 88);
+
+  margin-top: 100px;
+  width: 400px;
+  height: 300px;
+  margin-left: 300px;
+  border-radius: 6px;
+}
+
+.partner-a {
+  margin-top: 100px;
+  height: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid blue;
+}
+
+.partner-b {
+  height: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid blue;
+}
+
+.btn {
+  height: 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid blue;
+  background-color: rgb(118, 160, 216);
+}
+
+.textone {
+  text-align: center;
+}
+
+.texttwo {
+  text-align: center;
+}
