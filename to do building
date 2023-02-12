@@ -1,0 +1,54 @@
+import { useState } from "react"
+
+
+function App() {
+
+const [textInput, setInput]=useState('')
+let [listItem, setListItem]= useState([])
+
+
+
+  
+  const add = () => {
+    setListItem(
+      [
+        ...listItem,
+        textInput,
+
+      
+      ]
+    )  
+  }
+  
+  const del = (newww) => {
+    const newList = listItem.filter((textInput) => textInput !== newww)
+    setListItem(newList)
+  }
+
+
+  console.log(textInput)
+
+
+  return (
+    <div>
+      <input value={textInput} onChange={ (e)=> setInput(e.target.value)}  />
+      
+      <p> {listItem} </p> 
+
+
+      <ul>
+				{listItem.map(listItem => (
+          <li key={Math.floor(Math.random() * 100)}>{listItem} <button onClick={()=>del(listItem)}>delte item</button></li>
+          
+				))}
+			</ul>
+
+
+
+
+      <button onClick={add}> add </button>
+    </div>
+  );
+}
+
+export default App;
